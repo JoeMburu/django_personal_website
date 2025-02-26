@@ -28,9 +28,13 @@ body {
   background-color: transparent;      
 }
 
-.app-log {
-  color: #ffffff;
+.app-logo {
   font-size: 3rem;
+}
+
+.app-logo:hover img {
+  filter: invert();
+  
 }
 
 .right-menu_options li a {
@@ -47,7 +51,38 @@ body {
 /********** Main Content **********/
 #main-content {
   flex: 1;
+  
 }
+
+#author_introduction #author_name {
+  color: #39f;
+}
+
+#author_introduction p {
+  font-size: 2.6rem;
+  color: #333;
+}
+
+#author_introduction .uk-margin a {
+  border: 2px solid #39f; 
+  color: #000; 
+  font-size: 1.8rem;
+}
+
+#author_introduction .uk-margin a:last-child {
+  background-color: #39f; 
+  color: #fff;  
+}
+
+#author_introduction .uk-margin a:hover {
+  color: #BDBEA9; 
+  font-weight: bold;
+}
+
+
+
+
+
 
 
 /********** Footer **********/

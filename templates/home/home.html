@@ -23,7 +23,7 @@
       <!-- Navbar -->
       <nav class="uk-navbar-container" uk-navbar="mode: click">
         <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo app-log" href="#">
+          <a class="uk-navbar-item uk-logo app-logo" href="{% url 'home' %}">
             <img src="{% static 'images/favicon_io/favicon.ico' %}" alt="">
           </a>
         </div>
@@ -79,11 +79,32 @@
  
   <!-- Main Content -->
   <div id="main-content">
-    <div class="uk-container uk-container-expand home-container">
-
-    </div>
+    <!-- Hero Section -->
+    <section class="uk-section uk-section-secondary uk-background-muted" >
+      <div class="uk-container">
+        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+              <div class="uk-card uk-card-default uk-card-body" style="background-color: transparent;">
+                <img src="{% static 'images/me.jpg' %}" width="90%" height="200" alt="me">
+              </div>
+          </div>
+          <div class="uk-flex uk-flex-middle">
+            <div id="author_introduction">
+              <h1 class="uk-heading-large uk-text-stroke uk-text-center" id="author_name">I'm Joseph Afonne</h1>
+              <p class="uk-text-center">I am a Fullstack Developer and Data Analyst passionate about creating scalable web applications and insightful data-driven solutions.</p>
+              <div class="uk-margin">
+                <a href="#about" class="uk-button uk-button-default">About Me</a>
+                <a href="#projects" class="uk-button uk-button-primary">Projects</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- <div style="height:200px;background-color: #FFC971;"></div> -->
   </div>
-
   <footer id="footer">
     <div class="uk-container uk-container-expand">
       <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid >
