@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 
+
+if os.path.isfile("env.py"):
+  import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,9 +28,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r!&r16tg7@y6o2@(3fd-i*(!efze3+iw14o1#15g*zpvs(q)gg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1:8000']
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.herokuapp.com"
+]
+
 
 
 # Application definition
@@ -39,6 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'about',
+    'projects',
 ]
 
 MIDDLEWARE = [

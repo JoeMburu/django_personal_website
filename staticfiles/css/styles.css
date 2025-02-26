@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container {
+  background-color: #39f;
+}
+
+.home-container .uk-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;      
+}
+
+.app-logo {
+  font-size: 3rem;
+}
+
+.app-logo:hover img {
+  filter: invert();
+  
+}
+
+.right-menu_options li a {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+#mobile-menu_toggle {
+  color: #ffffff;
+  font-size: 2.9rem;
+  
+}
+
+/********** Main Content **********/
+#main-content {
+  flex: 1;
+  
+}
+
+#author_introduction #author_name {
+  color: #39f;
+}
+
+#author_introduction p {
+  font-size: 2.6rem;
+  color: #333;
+}
+
+#author_introduction .uk-margin a {
+  border: 2px solid #39f; 
+  color: #000; 
+  font-size: 1.8rem;
+}
+
+#author_introduction .uk-margin a:last-child {
+  background-color: #39f; 
+  color: #fff;  
+}
+
+#author_introduction .uk-margin a:hover {
+  color: #BDBEA9; 
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/********** Footer **********/
+#footer {
+  background-color: #39f;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#footer h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+#footer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#footer li a {
+  color: #fff;
+  font-size: 1.6rem;
+}
