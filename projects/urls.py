@@ -3,4 +3,5 @@ from .views import projects
 
 urlpatterns = [
     path('', projects, name='projects'),
+    path('software-dev/', projects, name='softwareprojects'),
 ]
