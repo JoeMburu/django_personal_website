@@ -29,11 +29,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+print("MY DEBUG = ",os.getenv('DEBUG'))
 if os.getenv('DEBUG').lower() in ['true', '1', 't']: 
     DEBUG = True 
 else: 
    DEBUG = False
-print("MY DEBUG = ", DEBUG)
+
 ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
