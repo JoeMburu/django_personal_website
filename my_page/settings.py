@@ -29,11 +29,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-print("MY DEBUG = ",os.getenv('DEBUG'))
-if os.getenv('DEBUG').lower() in ['true', '1', 't']: 
-    DEBUG = True 
-else: 
-   DEBUG = False
+
+DEBUG = os.getenv('DEBUG', 'False').strip().lower() in ('true', '1', 't', 'yes', 'y', 'on')
+
+print("DEBUG =", DEBUG) 
+print(type(DEBUG))
 
 ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
 
