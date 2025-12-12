@@ -9,3 +9,8 @@ os.environ['POSTGRES_USER'] = 'postgres'
 os.environ['POSTGRES_PASSWORD'] = 'joeMburuPost'
 os.environ['POSTGRES_HOST'] = '127.0.0.1'
 os.environ['POSTGRES_PORT'] = '5432'
+
+
+os.environ['CLOUDINARY_CLOUD_NAME'] = 'dre3rkvm1'
+os.environ['CLOUDINARY_API_KEY'] = '179514774695794'  
+os.environ['CLOUDINARY_API_SECRET'] = 'WJFsyfOLh9twna8cLk4DxpFbp9Q'
