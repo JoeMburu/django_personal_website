@@ -110,7 +110,7 @@ img {
 
 .hero .uk-button-primary, .hero .uk-button-secondary {  
   border: none;
-  padding: 15px 20px;
+  padding: 15px 15px;
   font-size: 2rem;
   font-weight: 700;
   margin-top: 30px;
@@ -132,4 +132,12 @@ footer h4 {
 footer p {
   font-size: 1.8rem;
   line-height: 1.6;
+}
+
+ @media (max-width: 960px) {
+  .about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
