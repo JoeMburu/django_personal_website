@@ -11,14 +11,14 @@
     <div class="uk-container" style="background-color: transparent;">
       <div class="uk-grid uk-grid-large uk-flex-middle" uk-grid style="background-color: transparent;">
         <!-- Image (2/3 width) -->
-        <div class="uk-width-1-2@m">
+        <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
           <img src="{% static 'images/me5.jpg' %}"
           alt="Hero Image"
           class="uk-width-1-1 uk-border-rounded">
         </div>
 
         <!-- Text (1/3 width) -->
-        <div class="uk-width-1-2@m uk-text-center hero">
+        <div class="uk-width-1-2@m uk-text-center hero" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
           <h1 class="uk-heading-large">Hi, I'm Joseph Afonne</h1>
           <p class="uk-text-lead">
             Data, BI Analyst & Django FullStack Developer
@@ -42,7 +42,7 @@
   <section class="uk-section uk-section-default">
     <div class="uk-container">      
       <div class="uk-grid uk-grid-large uk-flex-middle" uk-grid>
-        <div class="uk-width-2-3@m">
+        <div class="uk-width-2-3@m" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
           <h2 class="uk-heading-small uk-margin-remove-top">A calm approach to complex problems</h2>
           <p class="uk-text-lead uk-margin-small-top">
             I’m a freelance Data &amp; BI Analyst and Django full-stack developer. I help teams move from
@@ -57,7 +57,7 @@
             <a class="uk-button uk-button-default" href="#featured-work">View featured work</a>
           </div>
         </div>
-        <div class="uk-width-1-3@m">
+        <div class="uk-width-1-3@m" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
           <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
             <h3 class="uk-card-title uk-margin-remove">Quick facts</h3>
             <ul class="uk-list uk-list-divider uk-margin-small-top">
@@ -74,8 +74,8 @@
   <!-- 2) My Story -->
   <section class="uk-section uk-section-secondary uk-light">
     <div class="uk-container">
-      <div class="uk-grid uk-grid-large" uk-grid>
-        <div class="uk-width-1-2@m">
+      <div class="uk-grid uk-grid-large" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+        <div class="uk-width-1-2@m" uk-scrollspy-class="uk-animation-slide-top">
           <h2 class="uk-heading-small">My story</h2>
           <p class="uk-margin-remove-top">
             I began my career drawn to patterns—how numbers reflect behavior, performance, 
@@ -99,7 +99,7 @@
             that are easy to trust and maintain.
           </p>
         </div>
-        <div class="uk-width-1-2@m">
+        <div class="uk-width-1-2@m" uk-scrollspy-class="uk-animation-slide-bottom">
           <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded">
             <p class="uk-margin-remove-top">
               I’ve always been drawn to the “why” behind performance—what drives growth, what slows teams down, and what
@@ -128,7 +128,7 @@
           Practical analytics and engineering—delivered with clarity, not complexity.
         </p>
       </div>
-      <div class="uk-grid uk-grid-large uk-child-width-1-3@m" uk-grid>
+      <div class="uk-grid uk-grid-large uk-child-width-1-3@m" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
             <h3 class="uk-card-title">BI &amp; insight</h3>
@@ -225,7 +225,7 @@
         </div>
       </div>
 
-      <div class="uk-grid uk-grid-large uk-child-width-1-3@m" uk-grid>
+      <div class="uk-grid uk-grid-large uk-child-width-1-3@m" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
             <h3 class="uk-card-title">Executive KPI dashboard</h3>
@@ -236,7 +236,6 @@
             <p class="uk-text-small uk-text-muted uk-margin-remove-bottom"><strong>Tools:</strong> SQL, Power BI / Tableau, Excel</p>
           </div>
         </div>
-
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
             <h3 class="uk-card-title">Django client portal</h3>
@@ -247,7 +246,6 @@
             <p class="uk-text-small uk-text-muted uk-margin-remove-bottom"><strong>Tools:</strong> Django, PostgreSQL, REST APIs</p>
           </div>
         </div>
-
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
             <h3 class="uk-card-title">Reporting automation</h3>
@@ -269,7 +267,7 @@
             <h2 class="uk-heading-small">How I work</h2>
             <p class="uk-text-lead uk-margin-small-top">Structured, transparent, and focused on outcomes.</p>
           </div>
-          <div class="uk-grid uk-grid-large uk-child-width-1-3@m" uk-grid>
+          <div class="uk-grid uk-grid-large uk-child-width-1-3@m" uk-grid uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
             <div>
               <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
                 <h3 class="uk-card-title">Clarify the question</h3>
